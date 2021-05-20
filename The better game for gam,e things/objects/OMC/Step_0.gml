@@ -71,7 +71,7 @@ active = false;
 //damage
 dcooldown = dcooldown - 1;
 
-if (place_meeting(x,y,Oenemy) || place_meeting(x,y,Oenemy1) || place_meeting(x,y,OenemyNOPATH)) and (dcooldown < 0)
+if (place_meeting(x,y,Oenemy) || place_meeting(x,y,OenemyPath2) || place_meeting(x,y,OenemyPath3) ||place_meeting(x,y,OenemyPath4) ||place_meeting(x,y,OenemyNOPATH)) and (dcooldown < 0)
 {
 	hp --
 	dcooldown = 60;
@@ -99,3 +99,4 @@ if (place_meeting(x,y,ODeath))
 	room_goto(1);
 	room_restart()
 }
+
